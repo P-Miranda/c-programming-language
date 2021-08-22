@@ -1,7 +1,6 @@
 # C Programming Language
 Exercises and examples from the book **C Programming Language** by Brian Kernighan and Dennis Ritchie.
 
-
 ## Organization
 The examples and exercises are organized by the book chapters and sections.
 
@@ -17,4 +16,5 @@ make run CHAPTER=X EXERCISE=X-Y
 
 ## TODO
 - All global make clean
-- Complete examples and exercises
+- Chapter 1, Exercise 24
+- Example and Exercise Index
