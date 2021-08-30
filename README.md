@@ -18,3 +18,20 @@ make run CHAPTER=X EXERCISE=X-Y
 - All global make clean
 - Chapter 1, Exercise 24
 - Example and Exercise Index
+
+* * *
+
+## Examples and Exercise Index
+
+### Chapter 1: A Tutorial Introduction
+- Example1-1:
+- Example1-2:
+- ...
+- Exercise1-1:
+- ...
+
+### Chapter 2: Type, Operators and Expressions
+- Example2-1: Compilation of all small examples throughout the chapter.
+    - 
+- Exercise2-1: Determine the ranges of various C types: `char`, `short`, `int` and `long`.
+    - WIP: Also calculate ranges for `float` and `double`
