@@ -32,6 +32,17 @@ make run CHAPTER=X EXERCISE=X-Y
 
 ### Chapter 2: Type, Operators and Expressions
 - Example2-1: Compilation of all small examples throughout the chapter.
-    - 
+    - strlen implementation
+    - enums
+    - check for leap years
+    - atoi
+    - lower
+    - pseudo random implementation
+    - delete all instances of a char from a string
+    - strcat, contatenate strings
 - Exercise2-1: Determine the ranges of various C types: `char`, `short`, `int` and `long`.
     - WIP: Also calculate ranges for `float` and `double`
+- Exercise2-2: Write a for loop to read from terminal without using `&&` or `||`.
+- Exercise2-3: Write a function `htoi(s)` which converts a string from hex to int.
+- Exercise2-4: Write a function that deletes all chars in a string that match the characters in another string.
+- Exercise2-5: Write a function that returns the first location where a character of a string appears on another one.
