@@ -40,9 +40,16 @@ make run CHAPTER=X EXERCISE=X-Y
     - pseudo random implementation
     - delete all instances of a char from a string
     - strcat, contatenate strings
+    - get n bits from position p
+    - count 1 bits in x integer
 - Exercise2-1: Determine the ranges of various C types: `char`, `short`, `int` and `long`.
     - WIP: Also calculate ranges for `float` and `double`
 - Exercise2-2: Write a for loop to read from terminal without using `&&` or `||`.
 - Exercise2-3: Write a function `htoi(s)` which converts a string from hex to int.
 - Exercise2-4: Write a function that deletes all chars in a string that match the characters in another string.
 - Exercise2-5: Write a function that returns the first location where a character of a string appears on another one.
+- Exercise2-6: Write a function that set the n bits from p in x according to bits from y.
+- Exercise2-7: Write a function that inverts a range of bits from x.
+- Exercise2-8: Write a function that returns x rotated by n bit positions.
+- Exercise2-9: Write a faster version of bitcount.
+- Exercise2-10: Write a version of lower function with conditional expressions.

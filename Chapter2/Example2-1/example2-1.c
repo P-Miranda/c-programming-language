@@ -64,6 +64,21 @@ void strcat(char s[], char[t]){
         ;
 }
 
+/* getbits: get n bits from position p */
+unsigned getbits(unsigned x, int p, int n){
+    return (x >> (p+1-n)) & ~(~0 << n);
+}
+
+/* bitcount: count 1 bits in x */
+int bitcount(unsigned x){
+    int b;
+    for(b = 0; x != 0; x >>= 1)
+        if(x & 01)
+            b++;
+
+    return b;
+}
+
 int main(){
     printf("Chapter 2 examples\n");
 
