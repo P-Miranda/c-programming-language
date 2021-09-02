@@ -53,3 +53,13 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise2-8: Write a function that returns x rotated by n bit positions.
 - Exercise2-9: Write a faster version of bitcount.
 - Exercise2-10: Write a version of lower function with conditional expressions.
+
+### Chapter 3: Control Flow
+- Example2-1: Compilation of all small examples throughout the chapter.
+    - binary search
+    - count digits, white spaces and others using a switch-case statement
+    - atoi: more general version
+    - shell sort
+    - reverse string in place
+- Exercise3-1: Rewrite binsearch to use only one test inside the loop.
+- Exercise3-2: Write a function that converts '\t' and '\n' into visible escape sequences, and a function that performs the opposite.
