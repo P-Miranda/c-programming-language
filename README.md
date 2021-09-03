@@ -55,11 +55,16 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise2-10: Write a version of lower function with conditional expressions.
 
 ### Chapter 3: Control Flow
-- Example2-1: Compilation of all small examples throughout the chapter.
+- Example3-1: Compilation of all small examples throughout the chapter.
     - binary search
     - count digits, white spaces and others using a switch-case statement
     - atoi: more general version
     - shell sort
     - reverse string in place
+    - itoa
 - Exercise3-1: Rewrite binsearch to use only one test inside the loop.
 - Exercise3-2: Write a function that converts '\t' and '\n' into visible escape sequences, and a function that performs the opposite.
+- Exercise3-3: Write a function that expands shorthand notations: a-z, 1-9, etc.
+- Exercise3-4: Write a version o itoa that supports -(2^Wordsize-1).
+- Exercise3-5: Write a version of itoa that supports different number basis.
+- Exercise3-6: Write a version of itoa that has a minimum field width.

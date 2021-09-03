@@ -24,7 +24,7 @@ unsigned int rightrot(unsigned int x, int n){
 }
 
 int main(){
-    printf("Exercise2-6\n");
+    printf("Exercise2-8\n");
     unsigned int x = 0xFFF;
     int n = 4;
 

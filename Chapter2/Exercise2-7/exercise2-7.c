@@ -24,7 +24,7 @@ unsigned int invert(unsigned int x, int p, int n){
 }
 
 int main(){
-    printf("Exercise2-6\n");
+    printf("Exercise2-7\n");
     unsigned int x = 0xFFF;
     int n = 4;
     int p = 4;

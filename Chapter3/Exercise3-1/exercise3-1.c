@@ -38,7 +38,7 @@ int binsearch_1test(int x, int v[], int n){
 }
 
 int main(){
-    printf("Chapter 3 examples\n");
+    printf("Exercise 3-1\n");
 
     return 0;
 }
