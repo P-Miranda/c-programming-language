@@ -68,3 +68,6 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise3-4: Write a version o itoa that supports -(2^Wordsize-1).
 - Exercise3-5: Write a version of itoa that supports different number basis.
 - Exercise3-6: Write a version of itoa that has a minimum field width.
+
+### Chapter 4: Functions and Program Structure
+- Example4-1: Program that prints each line that contains a matching string (`grep`-like)
