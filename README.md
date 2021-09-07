@@ -71,3 +71,6 @@ make run CHAPTER=X EXERCISE=X-Y
 
 ### Chapter 4: Functions and Program Structure
 - Example4-1: Program that prints each line that contains a matching string (`grep`-like)
+- Example4-2: Compilation of all small examples throughout the chapter.
+    - atof: convert strint to double
+- Exercise4-1: Write a function that prints the index of the rightmost occurence of `t` in `s`.
