@@ -73,4 +73,8 @@ make run CHAPTER=X EXERCISE=X-Y
 - Example4-1: Program that prints each line that contains a matching string (`grep`-like)
 - Example4-2: Compilation of all small examples throughout the chapter.
     - atof: convert strint to double
+    - simple calculator
+    - atoi implementation based on atof
 - Exercise4-1: Write a function that prints the index of the rightmost occurence of `t` in `s`.
+- Exercise4-2: Extend atof to handle scientific notation (123.45e-6)
+
