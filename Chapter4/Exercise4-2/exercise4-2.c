@@ -7,6 +7,10 @@
  * a floating point number may followed by `e` or `E` and an optionally signed 
  * exponent. */
 
+int getline_(char s[], int lim);
+double atof_(char s[]);
+double scientific_notation(double base, int exponent);
+
 int main(){
     printf("Exercise 4-2\n");
 
@@ -16,7 +20,7 @@ int main(){
 
     sum = 0;
     while(getline_(line,MAXLINE) > 0)
-        printf("\t%g\n", sum += atof(line));
+        printf("\t%g\n", atof_(line));
     return 0;
 }
 
@@ -36,9 +40,11 @@ int getline_(char s[], int lim){
 }
 
 /* atof: convert string s to double */
+/* assumed integer exponent */
 double atof_(char s[]){
     double val, power;
-    double exponent, exponent_sign, exponent_power;
+    double base;
+    int exponent, exponent_sign;
     int i, sign;
 
     for(i=0; isspace(s[i]); i++) /* skip whitespace */
@@ -61,40 +67,40 @@ double atof_(char s[]){
     
     /* handle scientific notation e or E */
     if(s[i] == 'e' || s[i] == 'E'){
+        i++;
         exponent_sign = (s[i] == '-') ? -1 : 1;
         if(s[i] == '+' || s[i] == '-')
             i++;
 
-        for(exponent= 0.0; isdigit(s[i]); i++)
-            exponent = 10.0 * exponent + (s[i] - '0');
+        for(exponent= 0; isdigit(s[i]); i++)
+            exponent = 10 * exponent + (s[i] - '0');
 
-        if(s[i] == '.')
-            i++;
-
-        for(exponent_power=1.0; isdigit(s[i]); i++){
-            exponent = 10.0 * exponent + (s[i] - '0');
-            exponent_power *= 10.0;
-        }
-
-        exponent = exponent_sign * exponent / exponent_power;
+        exponent = exponent_sign * exponent;
 
         /* val x 10^(exponent) */
         /* TODO */
-        return sign * val / power * exponent;
+        base = sign * val / power;
+        printf("Value: %f\tExponent: %d\n", base, exponent); 
+        return scientific_notation(base, exponent);
     } else {
         /* not scientific notation format */
         return sign * val / power;
     }
-
-    
-
-
-    return sign * val / power;
 }
 
-/* atoi: convert string s to integet using atof */
-int atoi(char s[]){
-    double atof(char s[]);
-
-    return (int) atof(s);
+/*scientific_notation: raise a base value by a integer power */
+double scientific_notation(double base, int exponent){
+    int i = 0;
+    double power_10 = 1;
+    if(exponent > 0){
+        for(i = exponent; i > 0; i--)
+            power_10 *= 10;
+    } else if(exponent < 0){
+        for(i = exponent; i < 0; i++)
+            power_10 *= 10;
+        power_10 = 1.0 / power_10;
+    }
+    base = base * power_10;
+    printf("SCI:%f\n", base);
+    return base;
 }
