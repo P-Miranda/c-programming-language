@@ -75,6 +75,7 @@ make run CHAPTER=X EXERCISE=X-Y
     - atof: convert strint to double
     - simple calculator
     - atoi implementation based on atof
+- Example4-3: Reverse Polish calculator
 - Exercise4-1: Write a function that prints the index of the rightmost occurence of `t` in `s`.
 - Exercise4-2: Extend atof to handle scientific notation (123.45e-6)
 
