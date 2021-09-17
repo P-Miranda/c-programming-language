@@ -80,4 +80,5 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise4-2: Extend atof to handle scientific notation (123.45e-6)
 - Exercise4-3: Extend example4-3 to calculate modulus
 - Exercise4-4: Implement function to print stack top, duplicate stack top, swap top two stack itens and clear the stack. Without poping items
-
+- Exercise4-5: Add access to math.h library functions (sin, cos, pow)
+- Exercise4-6: Add commands for handling variables. Add a variable for most recently printed value
