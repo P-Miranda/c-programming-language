@@ -247,7 +247,8 @@ void ungetch(int c){ /* push character back on input */
 double variable_array[N_VARIABLES]; /* structure with variables */
 
 double variable_get(int var);
-void variable_store(int var);
+void variable_store_stack_top(int var);
+void variable_store_value(int var, double value);
 
 void variable_init(void){
     int i = 0;
@@ -267,22 +268,32 @@ void variable_operation(char s[]){
             printf("Last printed: %f\n", variable_get(LAST_PRINTED));
             break;
         default:
+            printf("var default\n");
             if(variable_get(var) == 0.0){
-                variable_store(var);
+                variable_store_stack_top(var);
             } else {
-                printf("%c: %f\n",(char) var, variable_get(LAST_PRINTED));
+                printf("%c: %f\n",(char) var, variable_get(var));
             }
             break;
     }
     return; 
 }
 
-void variable_store(int var){
+void variable_store_stack_top(int var){
     int idx = var - VARIABLE;
     double value = 0;
     if(idx >= 0 && idx < N_VARIABLES){
         value = pop();
         push(value);
+        variable_array[idx] = value;
+    } else
+        printf("Error: invalid variable\n");
+    return;
+}
+
+void variable_store_value(int var, double value){
+    int idx = var - VARIABLE;
+    if(idx >= 0 && idx < N_VARIABLES){
         variable_array[idx] = value;
     } else
         printf("Error: invalid variable\n");
@@ -300,36 +311,6 @@ double variable_get(int var){
 }
 
 void variable_store_last_printed(double value){
-    variable_array[LAST_PRINTED] = value;
+    variable_store_value(LAST_PRINTED, value);
     return;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
