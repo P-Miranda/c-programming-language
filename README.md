@@ -83,3 +83,4 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise4-5: Add access to math.h library functions (sin, cos, pow)
 - Exercise4-6: Add commands for handling variables. Add a variable for most recently printed value
 - Exercise4-7: Write a routine `ungets(s)` that will push back an entire string onto the input.
+- Exercise4-8: Modify `getch` and `ungetch` to account for at most one character of pushback. (Honestly I didn't get this one)
