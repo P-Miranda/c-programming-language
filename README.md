@@ -85,3 +85,4 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise4-7: Write a routine `ungets(s)` that will push back an entire string onto the input.
 - Exercise4-8: Modify `getch` and `ungetch` to account for at most one character of pushback.
 - Exercise4-9: Handle `EOF` push back in `getch` and `ungetch`
+- Exercise4-10: `getline` to read an entire input line instead of `getch` and `ungetch`
