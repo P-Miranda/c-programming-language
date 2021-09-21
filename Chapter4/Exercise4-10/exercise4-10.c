@@ -5,7 +5,7 @@
 #define MAXOP 100 /* max size of operand or operator */
 #define NUMBER '0' /* signal that a number was found */
 
-/* An alternate organization uses `getline` to read an entire input line; this
+/* An alternate organization uses `getline_` to read an entire input line; this
  * makes `getch` and `ungetch` unnecessary. Revise the calculator to use this
  * approach */
 
@@ -18,13 +18,6 @@
  * - exp e 
  * - pow p
  * - variables Cappital letters (A, B, C... P: last printed)
- * */
-
-/* TODO 
- * add support for capital letters in getop()
- * add case for capital letters
- * add vector for variables and functions to work with it
- * automate storing last printed number into P variable
  * */
 
 int getop(char s[]);
@@ -176,21 +169,18 @@ void clear_stack(void){
 char buf[MAXLINE]; /* buffer line */
 int bufp = 0; /* buffer pointer */
 
-void getline(void);
-
-int getch(void);
-void ungetch(int);
+void getline_(void);
 
 /* getop: get next operator or numeric operand */
 int getop(char s[]){
     int i, c;
 
     /* try to get line if necessary */
-    getline();
+    getline_();
 
     /* TODO: getop needs to manage the bufp pointer */
 
-    while((s[0] = c = getch()) == ' ' || c == '\t')
+    while((s[0] = c = buf[bufp++]) == ' ' || c == '\t')
         ;
     s[1] = '\0';
     
@@ -199,53 +189,35 @@ int getop(char s[]){
     
     i = 0;
     if(isdigit(c)) /* collect integer part */
-        while(isdigit(s[++i] = c = getch()))
+        while(isdigit(s[++i] = c = buf[bufp++]))
             ;
     
     if(c == '.') /* collect fraction part */
-        while(isdigit(s[++i] = c = getch()))
+        while(isdigit(s[++i] = c = buf[bufp++]))
             ;
 
     s[i] = '\0';
 
     if(c != EOF)
-        ungetch(c);
+        bufp--;
 
     return NUMBER;
 }
 
 int buflen = 0; /* length of current line in buffer */
 
-void getline(void){
-    int c = ;
+void getline_(void){
 
     /* check if current line has chars to be read */
     if(bufp < buflen){
         return; /* do nothing */
     } else {
         /* read new line */
+        bufp = 0;
         buflen = 0;
         /* read characters until new line */
-        while((buf[buflen++] = getchar()) != '\n');
+        while(((buf[buflen++] = getchar()) != '\n') && (buflen < MAXLINE));
         buf[buflen] = '\0'; /* terminate string */
         return;
-    }
-}
-
-int getch(void){ /* get a (possibly pushed back) character */
-    if(bufp){ 
-        bufp--;
-        return buf;
-    } else {
-        return getchar();
-    }
-}
-
-void ungetch(int c){ /* push character back on input */
-    if(bufp)
-        printf("ungetch: there is already a buffered character\n");
-    else{
-        buf = c;
-        bufp++;
     }
 }
