@@ -87,3 +87,4 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise4-8: Modify `getch` and `ungetch` to account for at most one character of pushback.
 - Exercise4-9: Handle `EOF` push back in `getch` and `ungetch`
 - Exercise4-10: `getline` to read an entire input line instead of `getch` and `ungetch`
+- Exercise4-11: Modify `getop` so that it doesn't need to use `ungetch`.
