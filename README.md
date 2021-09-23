@@ -77,6 +77,7 @@ make run CHAPTER=X EXERCISE=X-Y
     - atoi implementation based on atof
 - Example4-3: Reverse Polish calculator
 - Example4-4: Reverse Polish calculator in multiple source files
+- Example4-5: Recursive implementation of `printd()`
 - Exercise4-1: Write a function that prints the index of the rightmost occurence of `t` in `s`.
 - Exercise4-2: Extend atof to handle scientific notation (123.45e-6)
 - Exercise4-3: Extend example4-3 to calculate modulus
