@@ -90,3 +90,5 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise4-9: Handle `EOF` push back in `getch` and `ungetch`
 - Exercise4-10: `getline` to read an entire input line instead of `getch` and `ungetch`
 - Exercise4-11: Modify `getop` so that it doesn't need to use `ungetch`.
+- Exercise4-12: **TODO**
+- Exercise4-13: Write a recursive version of `reverse(s)`, which reverses the string in place.
