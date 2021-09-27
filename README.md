@@ -93,3 +93,6 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise4-12: Write a recursive version of `itoa()` from `printd()`.
 - Exercise4-13: Write a recursive version of `reverse(s)`, which reverses the string in place.
 - Exercise4-14: Define a macro to swap two arguments of the same type.
+
+### Chapter 5: Pointers and Arrays
+- Example1-1: getint function that returns integer from input stream
