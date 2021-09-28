@@ -95,4 +95,6 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise4-14: Define a macro to swap two arguments of the same type.
 
 ### Chapter 5: Pointers and Arrays
-- Example1-1: getint function that returns integer from input stream
+- Example5-1: getint function that returns integer from input stream.
+- Exercise5-1: Fix getint to push back isolated `+` and `-` chars.
+- Exercise5-2: Write `getfloat` based on `getint`.
