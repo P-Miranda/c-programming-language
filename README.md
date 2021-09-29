@@ -96,5 +96,6 @@ make run CHAPTER=X EXERCISE=X-Y
 
 ### Chapter 5: Pointers and Arrays
 - Example5-1: getint function that returns integer from input stream.
+- Example5-2: strlen version
 - Exercise5-1: Fix getint to push back isolated `+` and `-` chars.
 - Exercise5-2: Write `getfloat` based on `getint`.
