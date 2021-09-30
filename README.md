@@ -99,5 +99,6 @@ make run CHAPTER=X EXERCISE=X-Y
 - Example5-2: strlen v1 and v2.
 - Example5-3: rudimentary storage allocator.
 - Example5-4: strcpy array subscript version, pointer versions 1, 2 and 3.
+- Example5-5: strcmp function array subscript and pointer versions.
 - Exercise5-1: Fix getint to push back isolated `+` and `-` chars.
 - Exercise5-2: Write `getfloat` based on `getint`.
