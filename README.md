@@ -103,3 +103,4 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise5-1: Fix getint to push back isolated `+` and `-` chars.
 - Exercise5-2: Write `getfloat` based on `getint`.
 - Exercise5-3: Write a pointer version of  `strcat()`.
+- Exercise5-4: Write the function `strend(s,t)`, checks for t at the end of s.
