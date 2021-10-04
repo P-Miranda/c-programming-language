@@ -104,3 +104,4 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise5-2: Write `getfloat` based on `getint`.
 - Exercise5-3: Write a pointer version of  `strcat()`.
 - Exercise5-4: Write the function `strend(s,t)`, checks for t at the end of s.
+- Exercise5-5: Write a pointer version of `strcpy()`, `strncat()` and `strncmp()`.
