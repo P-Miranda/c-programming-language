@@ -109,3 +109,4 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise5-5: Write a pointer version of `strcpy()`, `strncat()` and `strncmp()`.
 - Exercise5-6: **[TODO]** Rewrite pointer versions of previous functions.
 - Exercise5-7: Rewrite `readlines`to store lines in an array given by `main`.
+- Exercise5-8: Add error checking to `day_of_year` and `month_day`.
