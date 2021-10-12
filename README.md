@@ -102,6 +102,7 @@ make run CHAPTER=X EXERCISE=X-Y
 - Example5-5: strcmp function array subscript and pointer versions.
 - Example5-6: line sorting program (pointers to pointers).
 - Example5-7: multidimensional arrays for date convertion.
+- Example5-8: command line arguments: echo program versions 1 and 2.
 - Exercise5-1: Fix getint to push back isolated `+` and `-` chars.
 - Exercise5-2: Write `getfloat` based on `getint`.
 - Exercise5-3: Write a pointer version of  `strcat()`.
