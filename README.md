@@ -114,3 +114,4 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise5-7: Rewrite `readlines`to store lines in an array given by `main`.
 - Exercise5-8: Add error checking to `day_of_year` and `month_day`.
 - Exercise5-9: Rewrite `day_of_year` and `month_day` with pointers.
+- Exercise5-10: Reverse Polish calculator from command line arguments.
