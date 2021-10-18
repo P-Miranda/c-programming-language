@@ -115,3 +115,6 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise5-8: Add error checking to `day_of_year` and `month_day`.
 - Exercise5-9: Rewrite `day_of_year` and `month_day` with pointers.
 - Exercise5-10: Reverse Polish calculator from command line arguments.
+- Exercise5-11: **Skipped**
+- Exercise5-12: **Skipped**
+- Exercise5-13: Write a simple version of `tail` program. 
