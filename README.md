@@ -120,3 +120,4 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise5-12: **Skipped**
 - Exercise5-13: Write a simple version of `tail` program. 
 - Exercise5-14: Add reverse `-r` option to sort program.
+- Exercise5-15: Add fold `-f`, so that upper and lower case letters compare equal.
