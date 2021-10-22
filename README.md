@@ -107,6 +107,7 @@ make run CHAPTER=X EXERCISE=X-Y
 - Example5-10: match pattern from command line with optional arguments.
 - Example5-11: qsort with function pointers.
 - Example5-12: `dcl` program. Convert C declaration to a word description. Recursive-descent parser.
+- Example5-13: `undcl` program. Convert word description to C declaration.
 - Exercise5-1: Fix getint to push back isolated `+` and `-` chars.
 - Exercise5-2: Write `getfloat` based on `getint`.
 - Exercise5-3: Write a pointer version of  `strcat()`.
