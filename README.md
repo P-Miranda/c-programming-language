@@ -125,3 +125,6 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise5-15: Add fold `-f`, so that upper and lower case letters compare equal.
 - Exercise5-16: **Skipped**
 - Exercise5-17: **Skipped**
+- Exercise5-18: **Skipped**
+- Exercise5-19: **Skipped**
+- Exercise5-20: **Skipped**
