@@ -131,3 +131,4 @@ make run CHAPTER=X EXERCISE=X-Y
 
 ### Chapter 6: Structures
 - Example6-1: compilation of simple initial examples.
+- Example6-2: C keyword counting program.
