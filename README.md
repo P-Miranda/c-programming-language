@@ -128,3 +128,6 @@ make run CHAPTER=X EXERCISE=X-Y
 - Exercise5-18: **Skipped**
 - Exercise5-19: **Skipped**
 - Exercise5-20: **Skipped**
+
+### Chapter 6: Structures
+- Example6-1: compilation of simple initial examples.
