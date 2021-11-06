@@ -15,7 +15,6 @@ make run CHAPTER=X EXERCISE=X-Y
 ```
 
 ## TODO
-- All global make clean
 - Chapter 1, Exercise 24
 - Example and Exercise Index
 

@@ -14,4 +14,4 @@ all:
 	make -C $(RUN_PATH) all
 
 clean:
-	make -C $(RUN_PATH) clean
+	find . -mindepth 2 -type d -not -path "./.git/*" | xargs -I {} make -C {} clean
