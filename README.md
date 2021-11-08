@@ -14,20 +14,82 @@ or to execute an exercise from to level:
 make run CHAPTER=X EXERCISE=X-Y
 ```
 
-## TODO
-- Chapter 1, Exercise 24
-- Example and Exercise Index
+## Global clean
+Clean all examples and exercises from top level:
+```
+make clean
+```
 
 * * *
 
 ## Examples and Exercise Index
 
 ### Chapter 1: A Tutorial Introduction
-- Example1-1:
-- Example1-2:
-- ...
-- Exercise1-1:
-- ...
+- Example1-1: Hello world.
+- Example1-2: Fahrenheit to celcius convertion.
+- Example1-3: Fahrenheit to celcius convertion, for loop version.
+- Example1-4: Copy input to output.
+- Example1-5: Copy input to output. 2nd version.
+- Example1-6: Count characters in input. 1st version.
+- Example1-7: Count characters in input. 2nd version.
+- Example1-8: Count lines in input.
+- Example1-9: Count lines, words and characters in input.
+- Example1-10: Count digits, white space and other characters from input.
+- Example1-11: Power functions.
+- Example1-12: Print longest input line using character arrays.
+- Example1-13: Print longest input line. Specialized version.
+- Exercise1-1: Run the "Hello, world" program on your system. Experiment with 
+leaving out parts of the program, to see what error messages you get.
+- Exercise1-2: Experiment to find out what happens when printf's argument string
+contains \c, where c is some character not listed above.
+- Exercise1-3: Modify the temperature conversion program to print a heading 
+above the table.
+- Exercise1-4: Write a program to print the corresponding Celsius to Fahrenheit
+table.
+- Exercise1-5: Modify the temperature conversion program to print the table in 
+reverse order, that is from 300 degrees to 0.
+- Exercise1-6: Verify that the expression getchar() != EOF is 0 or 1.
+- Exercise1-7: Write a program to print the value of EOF.
+- Exercise1-8: Write a program to count blanks, tabs and newlines.
+- Exercise1-9: Write a program to copy its input to its output, replacing each 
+string of one or more blanks by a single blank.
+- Exercise1-10: Write a program to copy its input to its output, replacing each
+tab by \t, each backspace by \b, and each backslash by \\. This makes tabs and 
+backspaces visible in an unambiguous way.
+- Exercise1-11: How would you test the word count program? What kinds of input 
+are most likely to uncover bugs if there are any?
+- Exercise1-12: Write a program that prints its input one word per line.
+- Exercise1-13: Write a program to print a histogram of the lengths of words in
+its input. It is easy to draw the ihstogram with the bars horizontal; a vertical
+orientation is more challenging.
+- Exercise1-14: Write a program to print a histogram of the frequencies of 
+different characters in its input.
+- Exercise1-15: Rewrite the temperature conversion program of Section 1.2 to use
+a function for conversion.
+- Exercise1-16: Revise the main routine of the longest line program so it will 
+correctly print the length of arbitrarily long input lines, and as much as 
+possible of the text.
+- Exercise1-17: Write a program to print all input lines that are longer than 80
+characters.
+- Exercise1-18: Write a program to remove trailing blanks and tabs from each 
+line of input, and to delete entirely blank lines.
+- Exercise1-19: Write a function `reverse(s)` that reverses the character string
+s. Use it to write a program that reverses its input a line at a time.
+- Exercise1-20: Write a program `detab` that replaces tabs in the input with the
+proper number of blanks to space to the nest tab stop. Assum a fixed set of tab 
+stops, say every n columns. Should n be a variable or a symbolic parameter?
+- Exercise1-21: Write a program `entab` that replaces strings of blanks by the 
+minimum number of tabs and blanks to acheive the same spacing. Use the same tab
+stops as for `detab`. When either a tab or a single blank would suffice to reach
+a tab stop, which should be given preference?
+- Exercise1-22: Write a program to "fold" long input lines into two or more 
+shorter lines after the last non-blank character that occurs before the n-th 
+column of input. Make sure your program does something intelligent with very 
+long lines, and if there are no blanks or tabs before the specified column.
+- Exercise1-23: Write a program to remove all comments from a C program. Don't 
+forget to handle quoted strings and character constants properly. C comments do
+not nest.
+- Exercise1-24: **Skipped**
 
 ### Chapter 2: Type, Operators and Expressions
 - Example2-1: Compilation of all small examples throughout the chapter.
