@@ -196,6 +196,7 @@ not nest.
 - Example6-3: C keyword counting program with structure pointers.
 - Example6-4: Count input works with binary trees.
 - Example6-5: Table lookup with hash table.
+- Example6-6: Unions.
 - Exercise6-1: **Skipped** 
 - Exercise6-2: **Skipped**
 - Exercise6-3: Read all different words and lines of appearence.
