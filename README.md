@@ -196,6 +196,9 @@ not nest.
 - Example6-3: C keyword counting program with structure pointers.
 - Example6-4: Count input works with binary trees.
 - Example6-5: Table lookup with hash table.
-- Exercise6-1: **Skipped** (TODO?)
-- Exercise6-2: **Skipped** (TODO?)
+- Exercise6-1: **Skipped** 
+- Exercise6-2: **Skipped**
 - Exercise6-3: Read all different words and lines of appearence.
+- Exercise6-4: **Skipped**
+- Exercise6-5: Write a function `undef` that will remove a name and definition from the table maintained by `lookup` and `install`.
+- Exercise6-6: **Skipped**
