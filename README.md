@@ -206,3 +206,4 @@ not nest.
 
 ### Chapter 7: Input and Output
 - Example7-1: Convert input to lower case.
+- Exercise7-1: Write a program that converts to lower or upper case, depending on `argv[0]`.
