@@ -208,6 +208,7 @@ not nest.
 - Example7-1: Convert input to lower case.
 - Example7-2: Minimal printf with variable argument list.
 - Example7-3: Rudimentary calculator with `scanf()`.
+- Example7-4: Read dates from stdin.
 - Exercise7-1: Write a program that converts to lower or upper case, depending on `argv[0]`.
 - Exercise7-2: **Skipped**
 - Exercise7-3: **Skipped**
