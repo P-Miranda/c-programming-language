@@ -210,6 +210,7 @@ not nest.
 - Example7-3: Rudimentary calculator with `scanf()`.
 - Example7-4: Read dates from stdin.
 - Example7-5: `cat` program. Version 1.
+- Example7-6: `cat` program. Version 2 with `stderr`.
 - Exercise7-1: Write a program that converts to lower or upper case, depending on `argv[0]`.
 - Exercise7-2: **Skipped**
 - Exercise7-3: **Skipped**
