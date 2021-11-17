@@ -217,3 +217,7 @@ not nest.
 - Exercise7-3: **Skipped**
 - Exercise7-4: **Skipped**
 - Exercise7-5: **Skipped**
+- Exercise7-6: Write a program to compare two files, printing the first line where they differ.
+- Exercise7-7: **Skipped**
+- Exercise7-8: **Skipped**
+- Exercise7-9: **Skipped**
