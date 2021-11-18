@@ -224,3 +224,4 @@ not nest.
 
 ### Chapter 8: The UNIX System Interface
 - Example8-1: Copy input to output. Low level implementation.
+- Example8-2: `getchar()` implementations with low level functions.
