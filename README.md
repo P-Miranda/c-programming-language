@@ -226,3 +226,5 @@ not nest.
 - Example8-1: Copy input to output. Low level implementation.
 - Example8-2: `getchar()` implementations with low level functions.
 - Example8-3: Simple `cp` program.
+- Example8-4: Read any number of bytes from any position of a file.
+- Exercise8-1: Rewrite `cat` with low level functions. **TODO**
