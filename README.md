@@ -228,6 +228,7 @@ not nest.
 - Example8-3: Simple `cp` program.
 - Example8-4: Read any number of bytes from any position of a file.
 - Example8-5: File pointer implementation from `stdio.h`.
+- Example8-6: Listing directories.
 - Exercise8-1: Rewrite `cat` with low level functions. **TODO**
 - Exercise8-2: **Skipped**
 - Exercise8-3: **Skipped**
