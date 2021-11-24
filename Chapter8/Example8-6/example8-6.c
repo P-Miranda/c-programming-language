@@ -18,7 +18,6 @@ int main(int argc, char **argv){
     return 0;
 }
 
-int stat(char *, struct stat *);
 void dirwalk(char *, void (*fcn) (char *));
 
 /* fsize: print size of file "name" */
@@ -33,7 +32,7 @@ void fsize(char *name){
     if((stbuf.st_mode & S_IFMT) == S_IFDIR)
         dirwalk(name, fsize);
     
-    printf("%81d %s\n", stbuf.st_size, name);
+    printf("%81ld %s\n", stbuf.st_size, name);
 }
 
 #define MAX_PATH 1024
@@ -42,14 +41,14 @@ void fsize(char *name){
 void dirwalk(char *dir, void (*fcn) (char *)){
     char name[MAX_PATH];
     Dirent *dp;
-    DIR *dfd;
+    DIR_ *dfd;
 
-    if((dfd = opendir(dir)) == NULL){
+    if((dfd = opendir_(dir)) == NULL){
         fprintf(stderr, "dirwalk: can't open %s\n", dir);
         return;
     }
 
-    while((dp = readdir(dfd)) != NULL){
+    while((dp = readdir_(dfd)) != NULL){
         if(strcmp(dp->name, ".") == 0 || strcmp(dp->name, "..") == 0)
             continue;   /* skip self and parent */
 
@@ -61,18 +60,19 @@ void dirwalk(char *dir, void (*fcn) (char *)){
         }
     }
 
-    closedir(dfd);
+    closedir_(dfd);
 }
 
+#include <stdlib.h>
 int fstat(int fd, struct stat *);
 
 /* opendir: open a directory for readdir calls */
-DIR *opendir(char *dirname){
+DIR_ *opendir_(char *dirname){
     int fd;
     struct stat stbuf;
-    DIR *dp;
+    DIR_ *dp;
 
-    if((fd = open(dirname, O_RDONLY, 0)) == -1 || fstat(fd, &stbuf) == -1 || (stbuf.st_mode & S_IFMT) != S_IFDIR || (dp = (DIR *) malloc(sizeof(DIR))) == NULL)
+    if((fd = open(dirname, O_RDONLY, 0)) == -1 || fstat(fd, &stbuf) == -1 || (stbuf.st_mode & S_IFMT) != S_IFDIR || (dp = (DIR_ *) malloc(sizeof(DIR_))) == NULL)
         return NULL;
 
     dp->fd = fd;
@@ -80,7 +80,7 @@ DIR *opendir(char *dirname){
 }
 
 /* closedir: close directory opened by opendir */
-void closedir(DIR *dp){
+void closedir_(DIR_ *dp){
     if(dp){
         close(dp->fd);
         free(dp);
@@ -90,7 +90,7 @@ void closedir(DIR *dp){
 #include <sys/dir.h>    /* local directory structure */
 
 /* readdir: read directory entries in sequence */
-Dirent *readdir(DIR *dp){
+Dirent *readdir_(DIR_ *dp){
     struct dirent dirbuf;   /* local directory structure */
     static Dirent d;        /* return: portable structure */
 
