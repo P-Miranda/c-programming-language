@@ -235,3 +235,6 @@ not nest.
 - Exercise8-3: **Skipped**
 - Exercise8-4: **Skipped**
 - Exercise8-5: **Skipped**
+- Exercise8-6: **Skipped**
+- Exercise8-7: **Skipped**
+- Exercise8-8: **Skipped**
