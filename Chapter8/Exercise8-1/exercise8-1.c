@@ -8,40 +8,42 @@
 
 int fopen_(char *fname, int rw);
 
-/* cat: concatenate files, version 2 */
+/* cat: concatenate files, low level implementation */
 int main(int argc, char *argv[]){
-    int *fd;
-    void filecopy(FILE*, FILE*);
+    int fd;
+    void filecopy_(int, int);
     char *prog = argv[0]; /* program name for errors */
 
     if(argc == 1) /* no args; copy standard input */
-        filecopy(stdin, stdout);
+        filecopy_(STDIN_FILENO, STDOUT_FILENO);
     else
         while(--argc > 0)
             if((fd = fopen_(*++argv, READ_FLAG)) == -1){
                 fprintf(stderr, "%s: can't open %s\n", prog, *argv);
-                exit(1);
+                return 1;
             } else {
-                filecopy_(fd, stdout);
-                fclose_(fd);
+                filecopy_(fd, STDOUT_FILENO);
+                close(fd);
             }
     if(ferror(stdout)){
         fprintf(stderr, "%s: error writing stdout\n", prog);
-        exit(2);
+        return 2;
     }
 
-    exit(0);
+    return 0;
 }
 
-/* filecopy: copy file ifp to file ofp */
-void filecopy(FILE *ifp, FILE *ofp){
-    int c;
+/* filecopy_: copy file ifd to file ofd */
+void filecopy_(int ifd, int ofd){
+    int n;
+    char buf;
 
-    while((c = getc(ifp)) != EOF)
-        putc(c, ofp);
+    while((n = read(ifd, &buf, 1)) > 0)
+        write(1, &buf, ofd);
+
 }
 
-#defile PERMS 0666  /* RW for owner, group, others */
+#define PERMS 0666  /* RW for owner, group, others */
 
 /* fopen_: low level implementation of fopen */
 int fopen_(char *fname, int rw){
@@ -52,13 +54,3 @@ int fopen_(char *fname, int rw){
     else
         return -1;
 }
-
-/* fclose_: low level implementation of fclose */
-void fclose_(int fd){
-    /* TODO */
-}
-
-/* TODO
- * complete fclose_
- * fwrite_
- * test */
