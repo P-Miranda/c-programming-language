@@ -1,6 +1,9 @@
 # C Programming Language
 Exercises and examples from the book **C Programming Language** by Brian Kernighan and Dennis Ritchie.
 
+This repository does not contain all solutions or examples, not does it guarantee any correctness.
+Use at own risk.
+
 ## Organization
 The examples and exercises are organized by the book chapters and sections.
 
@@ -9,7 +12,7 @@ To execute an example from top level:
 ```
 make run CHAPTER=X EXAMPLE=X-Y
 ```
-or to execute an exercise from to level:
+or to execute an exercise from top level:
 ```
 make run CHAPTER=X EXERCISE=X-Y
 ```
